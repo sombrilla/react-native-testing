@@ -14,12 +14,12 @@ export default class CopyTest extends React.Component {
   }
 }
 
-Text.propTypes = {
-    copy = PropTypes.string,
+CopyTest.propTypes = {
+    copy: PropTypes.string,
 }
 
-Text.defaultPropTypes = {
-    copy = 'asd',
+CopyTest.defaultProps = {
+    copy: 'asd',
 }
 
 const styles = StyleSheet.create({

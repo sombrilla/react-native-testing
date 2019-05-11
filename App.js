@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { CopyTest } from '../components/copy-test'; 
+import CopyTest from './components/copy-test'; 
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <CopyTest copy="wwe" />
+        <CopyTest />
       </View>
     );
   }
