@@ -1,6 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Button } from 'react-native';
 import CopyTest from '../../components/copy-test/copy-test.js';
 
 export default class Home extends React.Component {
@@ -8,6 +8,12 @@ export default class Home extends React.Component {
     return (
       <View style={styles.container}>
         <CopyTest copy="HENLO" />
+        <Button
+          title="Go to NBA page"
+          onPress={() =>
+            this.props.navigation.navigate('Nba')
+          }
+        />
       </View>
     );
   }
