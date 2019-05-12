@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import main from './styles';
 
 export default class CopyTest extends React.Component {
   render() {
-    const {copy} = this.props;
+    const { copy } = this.props;
     
     return (
-      <View style={styles.container}>
-        <Text>{copy}</Text>
+      <View style={main.container}>
+        <Text>{ copy }</Text>
       </View>
     );
   }
@@ -21,12 +22,3 @@ CopyTest.propTypes = {
 CopyTest.defaultProps = {
     copy: 'asd',
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
