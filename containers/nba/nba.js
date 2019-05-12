@@ -9,9 +9,9 @@ export default class Nba extends React.Component {
     
     return (
       <View style={main.container}>
-        <EventCard copy="Watch Blazers @ Nuggets" />
-        <EventCard copy="Watch Blazers @ Nuggets" />
-        <EventCard copy="Watch Blazers @ Nuggets" />
+        <EventCard navigation={this.props.navigation} copy="Blazers @ Nuggets" />
+        <EventCard navigation={this.props.navigation} copy="Blazers @ Nuggets" />
+        <EventCard navigation={this.props.navigation} copy="Blazers @ Nuggets" />
       </View>
     );
   }
