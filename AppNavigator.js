@@ -4,8 +4,8 @@ import Nba from './containers/nba/nba';
 import Event from './containers/event/event';
 
 const AppNavigator = createStackNavigator({
-  Home: { screen: Home },
-  Nba: { screen: Nba },
+  Home: { screen: Home, navigationOptions: { title: 'HOME' }},
+  Nba: { screen: Nba, navigationOptions: { title: 'NBA' } },
   Event: { screen: Event },
 });
 
