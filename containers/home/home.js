@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 // import PropTypes from 'prop-types';
-import { StyleSheet, View, Button } from 'react-native';
-import CopyTest from '../../components/copy-test/copy-test.js';
+import { StyleSheet, View, Button } from "react-native";
+import CopyTest from "../../components/copy-test/copy-test.js";
 
 export default class Home extends React.Component {
   render() {
@@ -10,24 +10,24 @@ export default class Home extends React.Component {
         <CopyTest copy="HENLO" />
         <Button
           title="Go to NBA page"
-          onPress={() =>
-            this.props.navigation.navigate('Nba')
-          }
+          // onPress={() =>
+          //   this.props.navigation.navigate('Nba')
+          // }
         />
       </View>
     );
   }
 }
 
-Home.propTypes = {}
+Home.propTypes = {};
 
-Home.defaultProps = {}
+Home.defaultProps = {};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });

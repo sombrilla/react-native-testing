@@ -3,7 +3,7 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "clean": "watchman watch-del-all && npm cache clean && cd android && ./gradlew clean && cd .."
+    "emulator": "cd C:/Users/Juan/AppData/Local/Android/sdk/emulator && emulator -avd Pixel_2_API_28 -netdelay none -netspeed full"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.4",
@@ -14,7 +14,7 @@
     "react-native": "^0.59.8",
     "react-native-cli": "^2.0.1",
     "react-native-gesture-handler": "^1.2.1",
-    "react-navigation": "^3.9.1",
+    "react-native-navigation": "^2.18.5",
     "scheduler": "^0.14.0",
     "seng-generator": "^0.9.0",
     "watchman": "^1.0.0"

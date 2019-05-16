@@ -1,11 +1,8 @@
-import React from 'react';
-import AppContainer from './AppNavigator';
+import React from "react";
+import Home from "./containers/home/home";
 
 export default class App extends React.Component {
   render() {
-    return (
-      <AppContainer />
-    );
+    return <Home />;
   }
 }
-

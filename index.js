@@ -1,4 +1,18 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import { AppRegistry } from "react-native";
+import { Navigation } from "react-native-navigation";
+import { registerScreens } from "./navigation/screens";
+import App from "./App";
 
-AppRegistry.registerComponent('strmy', () => App);
+registerScreens();
+
+AppRegistry.registerComponent("strmy", () => App);
+
+Navigation.events().registerAppLaunchedListener(() => {
+  Navigation.setRoot({
+    root: {
+      component: {
+        name: "Home"
+      }
+    }
+  });
+});
