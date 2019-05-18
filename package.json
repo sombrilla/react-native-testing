@@ -2,7 +2,7 @@
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios —simulator='iPhone 6s'",
+    "ios": "react-native run-ios --simulator='iPhone 6s'",
     "emulator": "cd C:/Users/Juan/AppData/Local/Android/sdk/emulator && emulator -avd Pixel_2_API_28 -netdelay none -netspeed full"
   },
   "dependencies": {
