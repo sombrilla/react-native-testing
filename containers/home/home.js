@@ -9,7 +9,7 @@ export default class Home extends React.Component {
       <View style={styles.container}>
         <CopyTest copy="HENLO" />
         <Button
-          title="Go to NBA page"
+          title="Go to page"
           // onPress={() =>
           //   this.props.navigation.navigate('Nba')
           // }
